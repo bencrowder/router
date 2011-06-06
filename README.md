@@ -8,10 +8,12 @@ Router is a (very) small PHP library for doing URL routing.
 2. Include it (via `require_once` or `include`).
 3. Put the following into your `.htaccess` file (or rename the included `htaccess` file to `.htaccess`):
 
+<code>
 	RewriteEngine On
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . /index.php	[L]
+</code>
 
 4. Modify `index.php` as necessary.
 
