@@ -51,4 +51,6 @@ This does the routing. You pass in the string to parse (the URL), the array of r
 		echo "Default";
 	}
 
-And here are the (very simplistic) handlers.
+And these are the (very simplistic) handlers.
+
+A working example is in the included `index.php` file.
