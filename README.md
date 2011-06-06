@@ -9,9 +9,9 @@ Router is a (very) small PHP library for doing URL routing.
 3. Put the following into your `.htaccess` file (or rename the included `htaccess` file to `.htaccess`):
 
 <code>
-	RewriteEngine On
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteEngine On<br/>
+	RewriteCond %{REQUEST_FILENAME} !-f<br/>
+	RewriteCond %{REQUEST_FILENAME} !-d<br/>
 	RewriteRule . /index.php	[L]
 </code>
 
