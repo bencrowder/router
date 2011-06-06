@@ -6,16 +6,15 @@ Router is a (very) small PHP library for doing URL routing.
 
 1. Copy `Router.class.php` somewhere in your project directory.
 2. Include it (via `require_once` or `include`).
-3. Put the following into your `.htaccess` file (or rename the included `htaccess` file to `.htaccess`):
+3. Put code from the `htaccess` section into your `.htaccess` file (or rename the included `htaccess` file to `.htaccess`):
+4. Modify `index.php` as necessary.
 
-<code>
+## htaccess
+
 	RewriteEngine On<br/>
 	RewriteCond %{REQUEST_FILENAME} !-f<br/>
 	RewriteCond %{REQUEST_FILENAME} !-d<br/>
 	RewriteRule . /index.php	[L]
-</code>
-
-4. Modify `index.php` as necessary.
 
 ## Usage
 
