@@ -9,9 +9,7 @@ class Router {
 		$found = false;
 
 		// go through each route and see if it matches; if so, execute the handler
-		foreach ($routes as $handler) {
-			$pattern = array_search($handler, $routes);
-
+		foreach ($routes as $pattern=>$handler) {
 			if (preg_match($pattern, $url, $matches)) {
 				call_user_func($handler, array_slice($matches, 1));
 				$found = true;
