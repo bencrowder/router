@@ -27,7 +27,7 @@ class Handlers {
 	}
 
 	static public function appHandler($args) {
-		$slug = $arsgs[0];
+		$slug = $args[0];
 
 		echo "App: slug=$slug";
 	}
