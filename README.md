@@ -11,9 +11,9 @@ Router is a (very) small PHP library for doing URL routing.
 
 ## htaccess
 
-	RewriteEngine On<br/>
-	RewriteCond %{REQUEST_FILENAME} !-f<br/>
-	RewriteCond %{REQUEST_FILENAME} !-d<br/>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . /index.php	[L]
 
 ## Usage
